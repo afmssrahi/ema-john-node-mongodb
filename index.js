@@ -73,6 +73,9 @@ run().catch(console.dir);
 app.get('/', (req, res) => {
 	res.send('Ema john server is running');
 });
+app.get('/hell0', (req, res) => {
+	res.send('Ema john Hello added');
+});
 
 app.listen(port, () => {
 	console.log('Server running at port', port);
